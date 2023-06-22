@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import {useState} from "react";
+import {CountProvider} from "./Contexts/CountContext";
+import Counter from "./Counter";
 
 function App() {
-  const [value, setValue] = useState('default');
-//  const callback = e => setValue(e.target.value);
+  const [value, setValue] = useState();
 
   return (
     <div className="App">
@@ -27,6 +28,10 @@ function App() {
           <input onChange={e => setValue(e.target.value)} value={value}></input>
           <div>value is {value}</div>
         </section>
+
+        <CountProvider>
+          <Counter />
+        </CountProvider>
       </header>
     </div>
   );

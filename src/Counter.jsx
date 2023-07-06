@@ -6,7 +6,7 @@ function Counter() {
   return (
     <div>
       <button onClick={incr}>push me!</button>
-      <div>count is {count}</div>
+      <span>count is {count}</span>
     </div>
   );
 }

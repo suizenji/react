@@ -31,6 +31,14 @@ function App() {
 
         <CountProvider>
           <Counter />
+          <Counter />
+          <CountProvider>
+            <Counter />
+          </CountProvider>
+        </CountProvider>
+
+        <CountProvider>
+          <Counter />
         </CountProvider>
       </header>
     </div>

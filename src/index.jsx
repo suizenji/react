@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Count from './Count';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/child",
     element: <Child />
+  },
+  {
+    path: "/count",
+    element: <Count />
   },
 ]);
 

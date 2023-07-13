@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Link } from "react-router-dom";
 
 import {useState} from "react";
 
@@ -25,6 +26,10 @@ function App() {
         <section>
           <input onChange={e => setValue(e.target.value)} value={value}></input>
           <div>value is {value}</div>
+        </section>
+
+        <section>
+          <Link to="/count">link to /count</Link>
         </section>
       </header>
     </div>

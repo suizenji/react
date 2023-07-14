@@ -1,19 +1,10 @@
 import {useState} from "react";
-
-function delay() {
-  return new Promise(resolve => setTimeout(resolve, 1000));
-}
-
-function pro() {
-//  throw new Promise(f => f);
-  return <div>please wait...</div>;
-}
+import Work from './Work';
 
 function Suspense() {
   return (
     <div>
-      <p>suspense test</p>
-      {pro()}
+      <Work />
     </div>
   );
 }

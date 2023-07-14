@@ -10,6 +10,8 @@ function Work() {
 //  delay().then(() => setUser('Ken'));
 
 //    <div>hello, {user}!</div>
+throw new Error('error');
+
   return (
     <div>hello, user!</div>
   );

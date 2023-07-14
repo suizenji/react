@@ -7,10 +7,6 @@ import ErrorBoundary from './Components/ErrorBoundary';
       </Suspense>
 */
 
-function err() {
-  throw 1;
-}
-
 function Suspense() {
   return (
     <div>

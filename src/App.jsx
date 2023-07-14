@@ -31,6 +31,9 @@ function App() {
         <section>
           <Link to="/count">link to /count</Link>
         </section>
+        <section>
+          <Link to="/suspense">link to /suspense</Link>
+        </section>
       </header>
     </div>
   );

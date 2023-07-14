@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Child from "./Child";
+import Suspense from "./Suspense";
 
 import {
   createBrowserRouter,
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/count",
     element: <Count />
+  },
+  {
+    path: "/suspense",
+    element: <Suspense />
   },
 ]);
 

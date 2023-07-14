@@ -5,12 +5,13 @@ function delay() {
 }
 
 function Work() {
-//  const [val, setVal] = useState();
+//  const [user, setUser] = useState();
 
+//  delay().then(() => setUser('Ken'));
+
+//    <div>hello, {user}!</div>
   return (
-    <div>
-      <p>work</p>
-    </div>
+    <div>hello, user!</div>
   );
 }
 

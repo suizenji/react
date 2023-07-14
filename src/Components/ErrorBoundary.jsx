@@ -32,3 +32,5 @@ console.log(error);
     return this.props.children;
   }
 }
+
+export default ErrorBoundary;

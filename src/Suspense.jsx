@@ -1,14 +1,22 @@
 import Work from './Work';
+import ErrorBoundary from './Components/ErrorBoundary';
 
 /*
       <Suspense fallback={<div>suspend...</div>}>
         <Work />
       </Suspense>
 */
+
+function err() {
+  throw 1;
+}
+
 function Suspense() {
   return (
     <div>
-      <Work />
+      <ErrorBoundary fallback={<p>error!</p>}>
+        <Work />
+      </ErrorBoundary>
     </div>
   );
 }

@@ -1,10 +1,11 @@
-import {useState} from "react";
 import Work from './Work';
 
 function Suspense() {
   return (
     <div>
-      <Work />
+      <Suspense fallback={<div>suspend...</div>}>
+        <Work />
+      </Suspense>
     </div>
   );
 }

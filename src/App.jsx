@@ -34,6 +34,12 @@ function App() {
         <section>
           <Link to="/suspense">link to /suspense</Link>
         </section>
+        <section>
+          <Link to="/child">link to /child</Link>
+        </section>
+        <section>
+          <Link to="/task">link to /task</Link>
+        </section>
       </header>
     </div>
   );

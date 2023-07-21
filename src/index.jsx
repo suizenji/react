@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Child from "./Child";
-import Suspense from "./Suspense";
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+import reportWebVitals from './reportWebVitals';
+import Suspense from "./Suspense";
+import Child from "./Child";
 import Count from './Count';
+import Task from "./Task";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/child",
     element: <Child />
+  },
+  {
+    path: "/task",
+    element: <Task />
   },
   {
     path: "/count",
